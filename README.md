@@ -1,6 +1,10 @@
 # love_formatter
 Lovely formatter for RSpec
 
+# Example
+
+![Example](http://i.imgur.com/FMpzIoJ.png)
+
 # Usage
 Install gem or add it to you Gemfile. Then run RSpec with option
 ```
