@@ -1,7 +1,3 @@
-# -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-
 Gem::Specification.new do |s|
   s.name = 'love_formatter'
 
@@ -16,13 +12,13 @@ Gem::Specification.new do |s|
   s.description = 'lovely rspec formatter'
 
   s.rdoc_options = ['--charset', 'UTF-8']
-  s.extra_rdoc_files = %w[README.md LICENSE]
+  s.extra_rdoc_files = %w(README.md LICENSE)
 
   s.rdoc_options = ['--charset', 'UTF-8']
-  s.extra_rdoc_files = %w[README.md LICENSE]
+  s.extra_rdoc_files = %w(README.md LICENSE)
 
   # Manifest
-  s.files = Dir.glob("lib/**/*")
+  s.files = Dir.glob('lib/**/*')
   s.require_paths = ['lib']
 
   s.add_dependency 'rspec', '~> 3.0'

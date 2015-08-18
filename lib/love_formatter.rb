@@ -2,8 +2,10 @@ require 'rspec'
 require 'rspec/core/formatters/base_text_formatter'
 require 'ruby-progressbar'
 
+# Main formatter class
 class LoveFormatter < RSpec::Core::Formatters::BaseTextFormatter
-  RSpec::Core::Formatters.register self, :example_passed, :example_pending, :example_failed, :start_dump
+  RSpec::Core::Formatters.register self, :example_passed, :example_pending,
+                                   :example_failed, :start_dump
 
   def example_passed(_notification)
     output.print RSpec::Core::Formatters::ConsoleCodes.wrap(' 💚 ', :success)
